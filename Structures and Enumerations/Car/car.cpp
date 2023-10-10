@@ -33,7 +33,6 @@ struct Car
     
     void enterCar() {
         std::cout << "Enter car:";
-        std::cin.ignore();
         std::cout << "Enter name:";
         std::cin.getline(name, NAME_SIZE);
         std::cout << "Enter description:";
@@ -55,13 +54,13 @@ struct Car
     {
         switch (fuel)
         {
-        case "Gasoline":
+        case Gasoline:
             std::cout << "We're on Gasoline" << std::endl;
             break;
-        case "Diesel":
+        case Diesel:
             std::cout << "We're on Diesel" << std::endl;
             break;
-        case "LPG":
+        case LPG:
             std::cout << "We're on LPG" << std::endl;
             break;
         }
@@ -73,10 +72,10 @@ struct Car
 
 int main() {
 
-    Car* myCar = new Car(120, 7.8)
-    Car car1(150, 7.8);
-    Car car2(78, 5.6);
-    Car car3(120, 7.8);
+    Car* myCar = new Car(0, 0, "Placeholder", "Placeholder");
+    myCar->enterCar();
+    
+    
 
     return 0;
 }
