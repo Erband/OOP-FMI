@@ -9,7 +9,10 @@
         "cmath": "cpp",
         "compare": "cpp",
         "concepts": "cpp",
+<<<<<<< HEAD
         "cstdarg": "cpp",
+=======
+>>>>>>> 5ec8750db3a16aaf64b9aaf513ec2f52610c5f57
         "cstddef": "cpp",
         "cstdint": "cpp",
         "cstdio": "cpp",
